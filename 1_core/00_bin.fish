@@ -1,5 +1,4 @@
 set -l bin_paths \
-    $HOME/.shell/bin \
     $HOME/bin
 
 for path in $bin_paths
