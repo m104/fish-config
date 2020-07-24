@@ -1,3 +1,3 @@
 function confix
-    git diff --name-only | uniq | xargs $EDITOR
+    $EDITOR (git diff --name-only | uniq)
 end
