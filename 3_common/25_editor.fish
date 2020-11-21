@@ -1,4 +1,4 @@
-if which -s nvim
+if which nvim > /dev/null
     debug "Detected nvim"
     set -g vim_cmd nvim
 else
