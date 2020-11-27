@@ -1,5 +1,5 @@
 set -l bin_paths \
-    $HOME/.local/bin \
+    /usr/local/sbin \
     $HOME/Library/Python/3.8/bin
 
 for path in $bin_paths
