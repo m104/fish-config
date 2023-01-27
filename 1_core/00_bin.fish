@@ -5,7 +5,7 @@ set -l bin_paths \
 for path in $bin_paths
     if test -d $path
         debug "Adding dir to PATH: '$path'"
-        set -x -p PATH $path
+        fish_add_path -g $path
     end
 end
 
