@@ -6,7 +6,7 @@ else
     set -g vim_cmd vim
 end
 
-debug "Setting EDITOR to $vim_cmd"
+debug "Setting EDITOR: $vim_cmd"
 set -x EDITOR $vim_cmd
-debug "Setting VISUAL to $vim_cmd"
+debug "Setting VISUAL: $vim_cmd"
 set -x VISUAL $vim_cmd
