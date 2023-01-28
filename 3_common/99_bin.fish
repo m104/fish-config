@@ -8,4 +8,3 @@ for path in $bin_paths
         fish_add_path -g "$path"
     end
 end
-

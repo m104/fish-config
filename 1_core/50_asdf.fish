@@ -1,4 +1,9 @@
-if test -n "$ASDF_DIR"
+set -l asdf_dir "$HOME/.asdf"
+
+if test -d "$asdf_dir"
+    set -gx ASDF_DIR "$HOME/.asdf"
+    debug "Detected asdf via '$ASDF_DIR'"
+
     set -l asdf_file "$ASDF_DIR/asdf.fish"
     if test -f "$asdf_file"
         debug "Detected asdf; sourcing '$asdf_file'"
@@ -11,4 +16,3 @@ if test -n "$ASDF_DIR"
         source "$file"
     end
 end
-
